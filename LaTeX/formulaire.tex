@@ -1,0 +1,172 @@
+\documentclass[a4paper,10pt,multicol]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{lscape}
+\usepackage{multicol}
+%\usepackage[small,compact]{titlesec}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{fit,calc,positioning,decorations.pathreplacing,matrix}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{nopageno}
+
+
+\usepackage{color}
+\definecolor{lightgray}{gray}{.85}
+\definecolor{darkgray}{gray}{.7}
+
+\usepackage{geometry}
+\geometry{hmargin=0.1cm,vmargin=0.2cm}
+\setlength{\parindent}{0cm}
+
+\newcommand{\p}{\rangle }
+\newcommand{\q}{\langle } 
+
+\paperheight=297mm
+\paperwidth=210mm
+
+\setlength\columnseprule{.1pt}
+\setlength{\columnsep}{1.4pc}
+
+% SquishList
+\newcommand{\squishlist}{
+   \begin{list}{$\cdot$}
+    { \setlength{\itemsep}{0pt}    \setlength{\parsep}{0pt}
+      \setlength{\topsep}{0pt}     \setlength{\partopsep}{0pt}
+      \setlength{\leftmargin}{1em} \setlength{\labelwidth}{1.1em}
+      \setlength{\labelsep}{0.5em} }
+}
+
+\newcommand{\squishend}{
+    \end{list}
+}
+
+\newcommand{\ud}{\textrm{d}}
+
+% text notation for operators
+%\newcommand{\ugrad}{\ensuremath{\overrightarrow{\textrm{grad}} \ }}
+%\newcommand{\udiv}{\ensuremath{\textrm{div} \ }}
+%\newcommand{\urot}{\ensuremath{\overrightarrow{\textrm{rot}} \ }}
+
+% nabla noation for operators
+\newcommand{\ugrad}{\nabla}
+\newcommand{\udiv}{\nabla \cdot}
+\newcommand{\urot}{\nabla \wedge}
+
+\newcommand{\ulap}{\ensuremath{\nabla^2}}
+
+\newcommand{\tq}{\ensuremath{\ \textrm{tq.} \ }}
+\def \dd  {{\rm d}}
+
+\newcommand{\der}[2]{\ensuremath{\frac{\ud #2}{\ud #1}}}
+\newcommand{\dder}[2]{\ensuremath{\frac{\ud^2 #2}{\ud #1^2}}}
+\newcommand{\D}[2]{\ensuremath{\frac{\partial #2}{\partial #1}}}
+\newcommand{\DD}[2]{\ensuremath{\frac{\partial^2 #2}{\partial #1^2}}}
+
+\renewcommand{\vec}[1]{\mbox{\boldmath$#1$}}
+\newcommand{\univec}[1]{\ensuremath{\hat{\vec #1}}}
+\newcommand{\scalar}[2]{\ensuremath{\vec{#1} \cdot \vec{#2}}}
+\newcommand{\cross}[2]{\ensuremath{\vec{#1} \wedge \vec{#2}}}
+
+\newcommand{\emc}[1]{\ensuremath{\frac{#1}{4 \pi \varepsilon_0}}}
+
+\newcommand{\N}{\hat{\vec n}}
+\newcommand{\half}{\frac{1}{2}}
+
+\newcommand{\graysection}[1]{\section{\colorbox{lightgray}{#1}}}
+\newcommand{\graysec}[1]{\noindent\colorbox{darkgray}{\makebox[\columnwidth][l]{\textbf{#1}}}\\}
+\newcommand{\graypar}[1]{\noindent\colorbox{lightgray}{\makebox[\columnwidth][l]{\textbf{#1}}}\\}
+
+\usepackage{amssymb}
+
+\usepackage{pdflscape}
+
+\begin{document}
+\begin{landscape}
+\begin{multicols}{4}
+\raggedcolumns
+
+\setcounter{unbalance}{100}
+
+\pagestyle{empty}
+
+
+\scriptsize
+%\footnotesize
+
+% ---------------------------------
+%  DEBUT DU CONTENU DU FORMULAIRE
+% ---------------------------------
+
+\graysec{Mathématique}
+
+\graypar{Formules trigonométriques}
+
+\squishlist
+\item $\cos(\alpha \pm \beta) = \cos\alpha \cos \beta \mp \sin\alpha \sin\beta$
+\item $\sin(\alpha \pm \beta) = \sin\alpha \cos \beta \pm \sin\beta \cos\alpha$
+\item $\tan(\alpha \pm \beta) = \frac{\tan\alpha \pm \tan\beta}{1 \mp \tan\alpha\tan\beta}$
+\item $\sin(2\alpha) = 2\sin\alpha\cos\alpha$
+\item $\cos(2\alpha) = \cos^{2}\alpha - \sin^{2}\alpha = 1-2\sin^{2}\alpha = 2\cos^{2}\alpha$
+\item $\frac{1 + \cos\alpha}{2} = \cos^{2}(\alpha/2)$ ; $\frac{1-\cos\alpha}{2} = \sin^{2}(\alpha/2)$
+\item $\cos\alpha\cos\beta = 1/2 (\cos(\alpha+\beta) + \cos(\alpha-\beta))$
+\item $\cos\alpha\sin\beta = 1/2 (\sin(\alpha+\beta) - \sin(\alpha-\beta))$
+\item $\sin\alpha\sin\beta = 1/2 (\cos(\alpha-\beta) - \cos(\alpha+\beta))$
+\squishend
+
+\graypar{Intégrales/Dérivées de fonctions trigonométriques}
+
+\squishlist
+\item $\int \sin^{2}(ax) \dd x = \frac{x}{2} - \frac{\sin(2ax)}{4a}$
+\item $\int \cos^{2}(ax) \dd x = \frac{x}{2} + \frac{\sin(2ax)}{4a}$
+\item $\frac{\dd}{\dd x} \tanh(x) = \frac{1}{\cosh^{2}(x)} = {\rm sech}^{2}(x)$ (valable pour $\tan$)
+\squishend
+
+\graypar{Développement limité des fonctions trigo. autour de $0$}
+\squishlist
+\item $\sin(x) \simeq x - \frac{x^{3}}{6}$ \, ; \, $\cos(x) \simeq 1 - \frac{x^{2}}{2}$ \, ; \, $\tan(x) \simeq x + \frac{x^{3}}{3}$
+\item $\cot(x) \simeq \frac{1}{x} - \frac{x}{3} - \frac{x^{3}}{45}$  \, ; \, $\sec(x) \simeq 1 + \frac{x^{2}}{2} + \frac{5x^{4}}{24}$
+\item $\sinh(x) \simeq x + \frac{x^{3}}{6}$  ; \, $\cosh(x) \simeq 1 + \frac{x^{2}}{2}$  ; \, $\tanh(x) \simeq x - \frac{x^{3}}{3}$
+\item $\coth(x) \simeq \frac{1}{x} + \frac{x}{3} - \frac{x^{3}}{45}$ \, ; \, ${\rm sech}(x) \simeq 1 - \frac{x^{2}}{2} + \frac{5x^{4}}{24}$
+\squishend
+
+\graypar{Nombres complexes}
+\squishlist
+\item $\cos(x) = \frac{e^{ix}+e^{-ix}}{2}$ \,;\, $\sin(x) = \frac{e^{ix}-e^{-ix}}{2i}$
+\item $\cosh(x) = \frac{e^{x}+e^{-x}}{2}$ \,;\, $\sinh(x) = \frac{e^{x}-e^{-x}}{2}$
+\item $e^{i(\pi + 2k\pi)} = -1$ \,; \, $e^{i\cdot 2k\pi} = 1$ \,\, $k \in \mathbb{Z}$
+\item $e^{i(\frac{\pi}{2} + 2k\pi)} = i$ \,; \, $e^{i(-\frac{\pi}{2} + 2k\pi)} = -i$ \,\, $k \in \mathbb{Z}$  
+\item $\sqrt{2i} = 1+i$\, ; \, $\frac{1}{i} = -i$\, ; \,
+\squishend
+
+\graypar{Autres}
+\squishlist
+\item  $\int e^{-(x-\alpha)^2} \dd x = \sqrt{\pi}$ ; $\int e^{-\alpha x^2} \dd x=\sqrt{\frac{\pi}{\alpha}}$ ; $\int x^2 e^{-\alpha x^2} \dd x = \frac{\sqrt{\pi}}{2\alpha^{3/2}} $ ; $\int e^{-x^2+\alpha x} \dd x= \sqrt{\pi} e^{\alpha^2 /4}$
+\item $(x+y)^n=\sum_k^n\begin{pmatrix} n \\ k \end{pmatrix}x^{n-k}y^k$ \, , \, $\begin{pmatrix} n \\ k \end{pmatrix}=\frac{n!}{k!(n-k)!}$
+\item $e^x=\sum \dfrac{x^n}{n!}$ ; $\sum\limits_{j=0}^{n-1}x^j=\frac{x^n-1}{x-1}$ ; $\sum\limits_{j=1}^{3}x^j=\frac{x(x^3-1)}{x-1}$ (! $x\neq 1$)
+\squishend
+
+\graysec{Nouvelle section}
+
+\graypar{Sous-partie}
+\squishlist
+\item Premier élément de la liste:
+\squishlist
+\item Premier élément de la sous-liste
+\item Deuxième élément de la sous-liste
+\squishend
+\item Deuxième élément de la liste
+\squishend
+
+
+% ---------------------------------
+%  FIN DU CONTENU DU FORMULAIRE
+% ---------------------------------
+
+\end{multicols}
+\end{landscape}
+\end{document}
