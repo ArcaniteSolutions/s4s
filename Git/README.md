@@ -41,7 +41,7 @@ Dans l'exemple ci-dessus, une branche a été crée depuis le 2ème commit de la
     + Un bon message de commit fait idéalement < 50 charactères.
     + Un bon message de commit indique ce qui a été changé (fix, nouvelle fonctionnalité) et pourquoi
 + Cheat sheet:
-![](https://github.com/ArcaniteSolutions/s4s/blob/main/Git/git_cheatsheet.png)
+![](https://github.com/ArcaniteSolutions/s4s/blob/main/Git/git_cheatsheet_bg.png)
 + Conseils d'utilisation de git:
     + En CLI (Command Line Interface - dans un terminal), les commandes git donnent souvent des indications supplémentaires sur quelles commandes sont disponibles et ce qu'elles font. C'est souvent intéressant de bien lire ces informations et de chercher plus d'informations sur les commandes inconnues
     + `git status` permet de facilement voir la branche locale courante, la branche remote associée (et si il y a des commits de différence entre les deux), ainsi que les modifications dans la staging area, dans le workspace, ainsi que les modifications non-traquées (i.e. les fichiers ne sont pas connus de git)
