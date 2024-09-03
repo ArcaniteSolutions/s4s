@@ -25,7 +25,7 @@
     + Des outils d'intégration continue (Continuous Integration - CI) peuvent être mis en place pour vérifier qu'une MR remplit certains critères (e.g. passe certains tests) avant d'autoriser qu'elle soit merged
     + Il existe plusieurs façon de transférer les modifications d'une branches à une autre. On parle de **merge** ou de **rebase** avec différentes options possibles. Quelque soit l'option choisie, le résultat final du contenu du projet devrait être le même (pour autant que les même choix soient faits au moment de la résolution de conflits). La différence entre ces méthodes est dans **l'historique du graphe**
       
-![](https://github.com/ArcaniteSolutions/s4s/blob/main/Git/git_graph_feat.png) ![](https://github.com/ArcaniteSolutions/s4s/blob/main/Git/git_graph_merge.png) ![](https://github.com/ArcaniteSolutions/s4s/blob/main/Git/git_graph_feat_rebase.png)
+![](https://github.com/ArcaniteSolutions/s4s/blob/main/Git/git_graph_merge_or_rebase.png)
 
 Dans l'exemple ci-dessus, une branche a été crée depuis le 2ème commit de la branche principale.
   + La première option, merge, crée un nouveau commit sur la branche main avec les diffs de toute la branche ainsi que les choix de résolution de conflits. 
