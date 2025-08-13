@@ -21,5 +21,5 @@ Pendant vos études, indépendament de la section, vous allez être confrontés 
     + Facile à écrire
     + Simple à apprendre
     + Peut être lu facilement même sans être compilé
-+ **Pandoc** permet de transformer du markdown en latex, html, epub ou pdf (et vice-versa)
++ **[Pandoc](https://pandoc.org/)** permet de transformer du markdown en latex, html, epub ou pdf (et vice-versa)
 + Et pour la prise de note collaborative, privilégiez les outils de la suite [Framasoft](https://framasoft.org/en/) pour remplacer la suite Google Drive (et bien d'autres outils).
