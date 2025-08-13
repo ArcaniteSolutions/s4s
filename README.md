@@ -13,6 +13,6 @@ Les slides de la présentation sont disponibles (`slides.pdf`) et pour chaque su
 
 + Arcanite est une entreprise de services informatiques fondée en 2016 par 6 membres de la communauté EPFL, comptant environ 45 employé·e·s. 
 + Nous proposons des stages et jobs étudiants pendant les semestres de cours ainsi que pendant les vacances d'été. Contact : stages@arcanite.ch et jobs@arcanite.ch
-+ Nous sommes régulièrement présents lors d'événements sur le campus, le prochain rendez-vous est le Forum EPFL 2025, avec un stand le vendredi 10 octobre
++ Nous sommes régulièrement présents lors d'événements sur le campus, le prochain rendez-vous est le **Forum EPFL 2025**, avec un stand le vendredi 10 octobre
 + N'hésitez pas à nous suivre sur nos réseaux : [LinkedIn](https://www.linkedin.com/company/arcanite-ch/), [Twitter / X](https://x.com/arcanite_ch), [Instagram](https://www.instagram.com/arcanite_ch/)
 + Site web : [arcanite.ch](https://arcanite.ch) 
